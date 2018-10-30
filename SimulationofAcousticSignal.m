@@ -61,9 +61,9 @@ ratio_peak_o = max(F1o)/max(F3)
 
 echo = [f;F1';f;F3'];
 echoo = [f;F1o';f;F3'];
-fid = fopen('sim_freq.txt','w');                              %輸出檔案的名稱##########################################
+fid = fopen('sim_freq.txt','w');                              
 fprintf(fid,'%9f  %12f  %15f  %18f\r\n',echo);
 fclose(fid);
-fid = fopen('simo_freq.txt','w');                              %輸出檔案的名稱##########################################
+fid = fopen('simo_freq.txt','w');                              
 fprintf(fid,'%9f  %12f  %15f  %18f\r\n',echoo);
 fclose(fid);
